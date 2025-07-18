@@ -1,0 +1,39 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* optional background */
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lInput {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.lButton {
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.lButton:hover {
+  background-color: darkcyan;
+}
