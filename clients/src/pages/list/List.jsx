@@ -106,8 +106,8 @@ const { data, loading, error, reFetch } = useFetch(`/hotels?city=${destination}&
               "loading"
             ) : (
               <>
-                {data.map((item) => (
-                  <SearchItem item={item} key={item._id} />
+                {data.map((item,index) => (
+                  <SearchItem item={item} key={item._id} index={index} />
                 ))}
               </>
             )}

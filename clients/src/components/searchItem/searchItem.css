@@ -107,3 +107,66 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+@media (max-width: 1024px) {
+  .searchItem {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .siImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  .siDetails {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .siDetailTexts {
+    text-align: center;
+    gap: 10px;
+  }
+
+  .siRating {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .siTitle {
+    font-size: 18px;
+  }
+
+  .siPrice {
+    font-size: 20px;
+  }
+
+  .siCheckButton {
+    font-size: 14px;
+    padding: 8px 5px;
+  }
+
+  .siDesc {
+    gap: 8px;
+  }
+
+  .siFeatures,
+  .siCancelOp,
+  .siCancelOpSubtitle,
+  .siSubtitle,
+  .siDistance,
+  .siTaxOp {
+    font-size: 11px;
+  }
+
+  .siRating > button {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}

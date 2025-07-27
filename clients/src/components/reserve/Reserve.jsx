@@ -1,11 +1,13 @@
+import React, { useContext, useState } from "react"
+import useFetch from "../../hooks/useFetch"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./reserve.css"
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons"
-import useFetch from "../../hooks/useFetch"
-import { useContext, useState } from "react"
 import { SearchContext } from "../../context/SearchContext"
 import axios from "axios"
-import navigate, { useNavigate } from "react-router-dom"
+import  { useNavigate } from "react-router-dom"
+
+
 
 export const Reserve = ({setOpen, hotelId}) => {
   const [selectedRooms, setSelectedRooms] = useState([])
@@ -76,7 +78,8 @@ console.log("allDates:", allDates);
       )
       setOpen(false)
       navigate("/")
-    } catch (error) {
+}
+     catch (error) {
       console.log(error);
       
     }

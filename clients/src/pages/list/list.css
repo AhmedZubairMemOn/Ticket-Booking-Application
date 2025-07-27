@@ -81,3 +81,49 @@
 .listResult {
   flex: 3;
 }
+
+@media (max-width: 1024px) {
+  .listWrapper {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .listSearch {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .listResult {
+    width: 100%;
+  }
+
+  .lsOptionItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .lsOptionInput {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .lsTitle {
+    font-size: 18px;
+  }
+
+  .lsItem > input,
+  .lsItem > span {
+    font-size: 14px;
+  }
+
+  .lsOptionItem {
+    font-size: 11px;
+  }
+
+  .listSearch > button {
+    font-size: 14px;
+  }
+}

@@ -36,4 +36,37 @@
 
 .lButton:hover {
   background-color: darkcyan;
+} 
+
+@media (max-width: 768px) {
+  .lContainer {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .lInput {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .lButton {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lContainer {
+    gap: 10px;
+  }
+
+  .lInput {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .lButton {
+    padding: 8px;
+    font-size: 13px;
+  }
 }

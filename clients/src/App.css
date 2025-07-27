@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body should not allow horizontal overflow */
+body {
+  overflow-x: hidden;
+  width: 100%;
+}

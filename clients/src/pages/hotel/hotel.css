@@ -149,3 +149,75 @@
   color: lightgray;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .hotelWrapper {
+    padding: 0 20px;
+  }
+
+  .hotelDetails {
+    flex-direction: column;
+  }
+
+  .hotelDetailsPrice {
+    width: 100%;
+  }
+
+  .hotelImages {
+    gap: 10px;
+  }
+
+  .hotelImgWrapper {
+    width: 48%;
+  }
+
+  .sliderImg {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .bookNow {
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .hotelImgWrapper {
+    width: 100%;
+  }
+
+  .hotelDesc {
+    font-size: 13px;
+  }
+
+  .hotelTitle {
+    font-size: 20px;
+  }
+
+  .hotelAddress {
+    font-size: 11px;
+  }
+
+  .hotelDetailsPrice > h1 {
+    font-size: 16px;
+  }
+
+  .hotelDetailsPrice > h2 {
+    font-size: 15px;
+  }
+
+  .sliderImg {
+    height: 60vh;
+  }
+
+  .arrow {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .close {
+    font-size: 24px;
+  }
+}

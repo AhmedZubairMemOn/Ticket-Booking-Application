@@ -43,8 +43,3 @@ app.use((err,req,res,next)=>{
     stack:err.stack
   })
 })
-
-app.listen(8000,() =>{
-    connect()
-    console.log("connect");
-})

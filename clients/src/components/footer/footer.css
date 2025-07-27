@@ -21,3 +21,52 @@
   color: #003580;
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .fLists {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .fList {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fLists {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .fList {
+    width: 90%;
+    text-align: center;
+  }
+
+  .fListItem {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .fText {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fList {
+    width: 100%;
+  }
+
+  .fListItem {
+    font-size: 13px;
+  }
+
+  .fText {
+    font-size: 13px;
+  }
+}

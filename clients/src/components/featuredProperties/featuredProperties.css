@@ -44,3 +44,66 @@
 .fpRating>span{
   font-size: 14px;
 }
+@media (max-width: 1024px) {
+  .fp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .fpRating {
+    width: 45%;
+  }
+
+  .fpImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .fp {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .fpRating {
+    width: 90%;
+  }
+
+  .fpImg {
+    height: 180px;
+  }
+
+  .fpName,
+  .fpCity,
+  .fpPrice,
+  .fpItem {
+    font-size: 14px;
+  }
+
+  .fpItem button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fpRating {
+    width: 100%;
+  }
+
+  .fpImg {
+    height: 160px;
+  }
+
+  .fpName,
+  .fpCity,
+  .fpPrice,
+  .fpItem {
+    font-size: 13px;
+  }
+}
