@@ -45,4 +45,6 @@ app.use((err,req,res,next)=>{
 })
 
 
-export default app
+import { createServer } from "http";
+const server = createServer(app);
+export default server;
