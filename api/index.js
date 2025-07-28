@@ -50,3 +50,4 @@ if (process.env.NODE_ENV !== 'production') {
         console.log(`Server is running on port ${port}`);
     });
 }
+export default app
