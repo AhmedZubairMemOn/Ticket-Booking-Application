@@ -44,7 +44,10 @@ app.use((err,req,res,next)=>{
   })
 })
 
-
-import { createServer } from "http";
-const server = createServer(app);
-export default server;
+if (process.env.NODE_ENV !== 'production') {
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => {
+        console.log(`Server is running on port ${port}`);
+    });
+}
+export default app
