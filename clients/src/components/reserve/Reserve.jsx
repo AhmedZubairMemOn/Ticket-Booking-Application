@@ -11,7 +11,7 @@ import  { useNavigate } from "react-router-dom"
 
 export const Reserve = ({setOpen, hotelId}) => {
   const [selectedRooms, setSelectedRooms] = useState([])
-  const {data, loading, error} = useFetch(`/hotels/room/${hotelId}`)
+  const {data, loading, error} = useFetch(`${process.env.BASE_URL}/hotels/room/${hotelId}`)
   const {dates} = useContext(SearchContext)
   console.log(dates);
   
@@ -70,7 +70,7 @@ console.log("allDates:", allDates);
     try {
       await Promise.all(
         selectedRooms.map((roomId)=>{
-          const res = axios.put(`/rooms/availability/${roomId}`,{
+          const res = axios.put(`${process.env.BASE_URL}/rooms/availability/${roomId}`,{
             dates:allDates,
           })
           return res.data
