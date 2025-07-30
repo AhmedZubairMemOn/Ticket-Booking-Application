@@ -11,11 +11,13 @@ const FeaturedProperties = () => {
     "https://t3.ftcdn.net/jpg/00/29/13/38/360_F_29133877_bfA2n7cWV53fto2BomyZ6pyRujJTBwjd.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7In4Xswp5XlHeBN3h3AdXm4p2ncra3Tb8fw&s"
   ]
+  console.log(data);
+  
   return (
     <div className="fp">
     {loading ? "loading" : <>
       {data.map((item,index)=>(
-
+        
 
         <div className="fpRating" key={item._id}>
         <img 
